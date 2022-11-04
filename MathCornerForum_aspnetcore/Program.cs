@@ -1,4 +1,4 @@
-using MathCornerForum_aspnetcore.Models;
+using Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

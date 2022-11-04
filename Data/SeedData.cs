@@ -1,7 +1,13 @@
-﻿using MathCornerForum_aspnetcore.Models.Entities;
+﻿using Data.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace MathCornerForum_aspnetcore.Models
+namespace Data
 {
     public class SeedData
     {
@@ -9,7 +15,7 @@ namespace MathCornerForum_aspnetcore.Models
         {
             using (var context = new ApplicationDbContext(serviceProvider.GetRequiredService<DbContextOptions<ApplicationDbContext>>()))
             {
-                context.Users.Add(new User { UserName = "NewUser", Password = "1234" });
+                context.Users.Add(new User { UserName = "NewUser", Password = "12345", Email = "email@email.com"});
                 context.SaveChanges();
             }
         }

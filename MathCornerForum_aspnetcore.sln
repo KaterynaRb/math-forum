@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathCornerForum_aspnetcore", "MathCornerForum_aspnetcore\MathCornerForum_aspnetcore.csproj", "{5817EFE4-B948-49EE-A64E-97F36702B42C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{FFE2DE3F-3E05-4842-AAC3-4C4C09D50804}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5817EFE4-B948-49EE-A64E-97F36702B42C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5817EFE4-B948-49EE-A64E-97F36702B42C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5817EFE4-B948-49EE-A64E-97F36702B42C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFE2DE3F-3E05-4842-AAC3-4C4C09D50804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE2DE3F-3E05-4842-AAC3-4C4C09D50804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE2DE3F-3E05-4842-AAC3-4C4C09D50804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE2DE3F-3E05-4842-AAC3-4C4C09D50804}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

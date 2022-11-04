@@ -1,9 +1,9 @@
-﻿using MathCornerForum_aspnetcore.Models.Entities;
+﻿using Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Reflection.Emit;
 
-namespace MathCornerForum_aspnetcore.Models
+namespace Data
 {
     public class ApplicationDbContext : DbContext
     {
