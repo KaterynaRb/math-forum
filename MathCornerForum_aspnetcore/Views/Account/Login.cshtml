@@ -1,0 +1,16 @@
+﻿@{
+}
+
+<h3>Login</h3>
+<hr />
+
+@*<form asp-controller="Account" asp-action="Login" method="post">
+    <!-- Input and Submit elements -->
+</form>*@
+
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+    <input type="text" name="userName" placeholder="Username"/>
+    <input type="password" name="password" placeholder="Password" />
+    <input type="submit"/>
+}

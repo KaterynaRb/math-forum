@@ -1,5 +1,9 @@
-﻿using MathCornerForum_aspnetcore.Models;
+﻿using AutoMapper;
+using Data.Entities;
+using MathCornerForum_aspnetcore.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using System.Diagnostics;
 
 namespace MathCornerForum_aspnetcore.Controllers
@@ -18,8 +22,10 @@ namespace MathCornerForum_aspnetcore.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        [Authorize]
+        public IActionResult CreatePost()
         {
+            //move to PostController
             return View();
         }
 

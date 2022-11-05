@@ -13,10 +13,11 @@ namespace Data
     {
         public static void Initialize(IServiceProvider serviceProvider)
         {
-            using (var context = new ApplicationDbContext(serviceProvider.GetRequiredService<DbContextOptions<ApplicationDbContext>>()))
+            using (var context = new AppDbContext(serviceProvider.GetRequiredService<DbContextOptions<AppDbContext>>()))
             {
-                context.Users.Add(new User { UserName = "NewUser", Password = "12345", Email = "email@email.com"});
-                context.SaveChanges();
+                context.Database.EnsureCreated();
+                //context.Users.Add(new User { UserName = "NewUser", Password = "12345", Email = "email@email.com"});
+                //context.SaveChanges();
             }
         }
     }

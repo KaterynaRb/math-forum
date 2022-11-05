@@ -5,11 +5,11 @@ using System.Reflection.Emit;
 
 namespace Data
 {
-    public class ApplicationDbContext : DbContext
+    public class AppDbContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
-            Database.EnsureCreated();
+            //Database.EnsureCreated();
         }
 
         public DbSet<User> Users { get; set; }
@@ -66,6 +66,7 @@ namespace Data
 
                 b.Property(u => u.UserName).HasMaxLength(30).IsRequired();
                 b.Property(u => u.Password).IsRequired();
+                b.Property(u => u.Email).IsRequired();
             });
 
         }
